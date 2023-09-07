@@ -1,0 +1,378 @@
+body{
+    background-color: hsl(222, 26%, 31%);
+    font-family: 'League Spartan';
+}
+#clavier{
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 2%;
+}
+
+
+
+
+.calculator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid !important;
+} 
+.result{
+    border: none;
+    outline: none;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 32px;
+    font-family: 'League Spartan';
+}
+.ligne{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.btn{
+    border: none;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 10px;
+    height: 60px;
+    margin: 2%;
+   
+}
+.btnLast{
+    border: none;
+    width: 45%;
+    font-size: 32px;
+    font-weight: bolder;
+    border-radius: 10px;
+    height: 60px;
+}
+
+.titre{
+ position: absolute;
+ top: 1rem;
+ color: white;
+ font-size: 32px;
+ font-weight: bold;
+
+}
+#theme{
+  /* border: 1px solid white;  */
+  width: fit-content !important; 
+  height: fit-content !important; 
+  margin-top: 2rem; 
+  margin-left: 2.5rem;
+  font-weight: bold;
+  color: white;
+  
+}
+
+/* thème de la machine */
+
+.switch {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid white; */
+    height: 5rem;
+    position: relative;
+    padding: 0 1rem;
+    font-family: verdana;
+    margin-bottom: 1rem;
+  }
+  .switch:before {
+    content: "  ";
+    position: absolute;
+    left: 19.8rem;
+    bottom: 1.7rem;
+    z-index: -1;
+    width: 20%;
+    height: 1rem;
+    /* border: 2px solid red; */
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 30px;
+  }
+  .switch__label1 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0.5rem;
+    left: 20rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: color 200ms ease-out;
+  }
+  .switch__label2 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0.5rem;
+    left: 22rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: color 200ms ease-out;
+  }
+  .switch__label3 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0.5rem;
+    left: 24rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: color 200ms ease-out;
+  }
+  .switch__label:hover {
+    color: white;
+  }
+  .switch__indicator {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 2.3rem;
+    left: 19rem;
+    /* background: blue; */
+    border-radius: 50%;
+    transform: translate3d(1rem, 0, 0);
+  }
+
+
+  .switch__indicator2 {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 2.3rem;
+    left: 21rem;
+    border-radius: 50%;
+    transform: translate3d(1rem, 0, 0);
+  }
+
+  .switch__indicator3 {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 2.3rem;
+    left: 22.9rem;
+    border-radius: 50%;
+    transform: translate3d(1rem, 0, 0);
+  }
+
+
+ /*  .switch input#one:checked ~ .switch__indicator {
+    background-color: hsl(6, 70%, 34%) !important;;
+    transform: translate3d(1.2rem, 0, 0);
+    margin-top: 10%;
+  } */
+  
+ /*  .switch input#two:checked ~ .switch__indicator {
+    background: blue;
+    transform: translate3d(3rem, 0, 0);
+    margin-top: 10%;
+  } */
+ /*  .switch input#three:checked ~ .switch__indicator {
+    background: yellow;
+    transform: translate3d(5rem, 0, 0);
+    margin-top: 10%;
+  } */
+/*   .switch input[type=radio]:not(:checked), .switch input[type=radio]:checked {
+    display: none;
+  } */
+/* thème 1 */
+  .theme1 {
+    background-color:hsl(222, 26%, 31%);
+
+  }
+
+  .theme1 .titre {
+    color: hsl(0, 0%, 100%);
+  }
+  .theme1 #theme{
+    color: hsl(0, 0%, 100%);;
+  }
+
+  .theme1 .switch__label1{
+    color: hsl(0, 0%, 100%);
+  }
+
+  .theme1 .switch__label2{
+    color: hsl(0, 0%, 100%);
+  }
+  .theme1 .switch__label3{
+    color: hsl(0, 0%, 100%);
+  }
+ .theme1 .switch:before{
+ background-color: hsl(224, 36%, 15%);
+ }
+
+ .theme1 .switch__indicator{
+  background-color: hsl(6, 70%, 34%);
+ }
+
+ .theme1 .result {
+  background-color:  hsl(224, 36%, 15%);
+  color: hsl(0, 0%, 100%);
+ }
+ .theme1 #clavier{
+  background-color: hsl(223, 31%, 20%);
+ }
+
+ .theme1 .btn{
+    box-shadow: 0px 5px  hsl(224, 28%, 35%);
+    color: hsl(221, 14%, 31%);;
+ }
+
+ .theme1 #del{
+  background-color:hsl(185, 42%, 37%);
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.theme1 #reset{
+  background-color: hsl(185, 42%, 37%);
+  color: hsl(0, 0%, 100%);
+}
+
+.theme1 #egal{
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: hsl(6, 70%, 34%) !important;
+  color: hsl(0, 0%, 100%);
+  
+}
+
+
+
+/* thème 2 */
+
+
+.theme2 {
+  background-color:hsl(0, 0%, 90%);
+
+}
+
+.theme2 .titre {
+  color: hsl(60, 10%, 19%);
+}
+.theme2 #theme{
+  color:hsl(60, 10%, 19%);
+}
+
+.theme2 .switch__label1{
+  color: hsl(60, 10%, 19%);
+}
+.theme2 .switch__label2{
+  color: hsl(60, 10%, 19%);
+}
+
+.theme2 .switch__label3{
+  color: hsl(60, 10%, 19%);
+}
+
+.theme2 .switch:before{
+background-color: hsl(0, 5%, 81%);
+}
+
+.theme2 .switch__indicator2{
+background-color: hsl(6, 70%, 34%);
+}
+
+.theme2 .result {
+background-color: hsl(0, 0%, 93%);
+color: hsl(60, 10%, 19%);
+}
+.theme2 #clavier{
+background-color: hsl(0, 5%, 81%);
+}
+
+.theme2 .btn{
+  background-color:  hsl(45, 7%, 89%);
+  box-shadow: 0px 5px  hsl(224, 28%, 35%);
+  color: hsl(60, 10%, 19%)
+}
+
+.theme2 #del{
+background-color:hsl(185, 42%, 37%);
+color: hsl(0, 0%, 100%) !important;
+}
+
+.theme2 #reset{
+background-color: hsl(185, 42%, 37%);
+color: hsl(0, 0%, 100%);
+}
+
+.theme2 #egal{
+background-color: hsl(25, 98%, 40%);
+box-shadow: hsl(6, 70%, 34%) !important;
+color: hsl(0, 0%, 100%);
+
+}
+
+/* thème 3 */
+
+.theme3 {
+  background-color:hsl(268, 75%, 9%);
+
+}
+
+.theme3 .titre {
+  color:  hsl(52, 100%, 62%);
+}
+.theme3 #theme{
+  color: hsl(52, 100%, 62%);
+}
+
+.theme3 .switch__label1{
+  color:  hsl(52, 100%, 62%);
+}
+.theme3 .switch__label2{
+  color:  hsl(52, 100%, 62%);
+}
+
+.theme3 .switch__label3{
+  color: hsl(52, 100%, 62%);
+}
+
+.theme3 .switch:before{
+background-color:hsl(268, 71%, 12%);
+}
+
+.theme3 .switch__indicator3{
+background-color: hsl(176, 100%, 44%);
+}
+
+.theme3 .result {
+background-color: hsl(268, 71%, 12%);
+color: hsl(0, 0%, 100%);
+}
+.theme3 #clavier{
+background-color: hsl(268, 71%, 12%);
+}
+
+.theme3 .btn{
+  background-color:  hsl(281, 89%, 26%);
+  box-shadow: 0px 5px  hsl(290, 70%, 36%);
+  color:   hsl(52, 100%, 62%);
+}
+
+.theme3 #del{
+background-color:hsl(268, 47%, 21%);
+color: hsl(0, 0%, 100%) !important;
+}
+
+.theme3 #reset{
+  background-color:hsl(268, 47%, 21%);
+  box-shadow: 0px 5px  hsl(290, 70%, 36%);
+  color: hsl(0, 0%, 100%);
+}
+
+.theme3 #egal{
+background-color:  hsl(176, 100%, 44%);;
+box-shadow: 0px 5px  hsl(177, 92%, 70%) !important;
+color: hsl(0, 0%, 100%);
+
+}

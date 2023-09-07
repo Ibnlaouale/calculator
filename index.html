@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body id="body" class="theme1">
+    <div id="calculator" class="calculator theme1">
+        
+        <div class="switch">
+            <div>
+                <span class="titre">Calculator</span>
+            </div>
+            
+            <div style="width: 50%;">
+                
+                <label for="one" class="switch__label1">1</label>
+                <label for="two" class="switch__label2">2</label>
+                <label for="three" class="switch__label3" >3</label>
+                <div class="switch__indicator"></div>
+                <div class="switch__indicator2"></div>
+                <div class="switch__indicator3"></div>
+
+            </div>
+
+          <span id="theme">Thème</span>
+ 
+        </div>
+            
+                <input class="result" type="text" readonly >
+               
+        
+            <div id="clavier">
+
+                <div class="ligne">
+                    <button class="btn number" onclick="appendNumber('7')" type="button">7</button>
+                    <button class="btn number" onclick="appendNumber('8')" type="button">8</button>
+                    <button class="btn number" onclick="appendNumber('9')" type="button">9</button>
+                    <button id="del" class="btn" onclick="cancel()" type="button">DEL</button> 
+                </div>
+        
+                <div class="ligne">
+                    <button class="btn number" onclick="appendNumber('4')" type="button">4</button>
+                    <button class="btn number" onclick="appendNumber('5')" type="button">5</button>
+                    <button class="btn number" onclick="appendNumber('6')" type="button">6</button>
+                    <button id="addition" class="btn" onclick="appendOperator('+')" type="button">+</button> 
+                </div>
+        
+                <div class="ligne">
+                    <button class="btn number" onclick="appendNumber('1')" type="button">1</button>
+                    <button class="btn number" onclick="appendNumber('2')" type="button">2</button>
+                    <button class="btn number" onclick="appendNumber('3')" type="button">3</button>
+                    <button id="operator" class="btn" onclick="appendOperator('-')" type="button">-</button> 
+                </div>
+        
+                <div class="ligne">
+                    <button class="btn" onclick="appendOperator('.')" type="button">.</button>
+                    <button class="btn number" onclick="appendNumber('0')" type="button">0</button>
+                    <button id="operator" onclick="appendOperator('/')" class="btn" type="button">÷</button>
+                    <button id="operator" onclick="appendOperator('*')" class="btn" type="button">x</button> 
+                </div>
+                <div class="ligne">
+                    <button id="reset" class="btnLast" onclick="clean()" type="button">RESET</button>
+                    <button id="egal" class="btnLast" onclick = "result()" type="button">=</button>
+                </div>
+
+            </div>
+        
+    </div>
+</body>
+</html>
