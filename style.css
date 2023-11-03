@@ -22,7 +22,7 @@ body{
     border: none;
     outline: none;
     height: 100px;
-    width: 100%;
+    width: 100%; 
     border-radius: 10px;
     text-align: right;
     font-size: 32px;
@@ -163,28 +163,9 @@ body{
     border-radius: 50%;
     transform: translate3d(1rem, 0, 0);
   }
-
-
- /*  .switch input#one:checked ~ .switch__indicator {
-    background-color: hsl(6, 70%, 34%) !important;;
-    transform: translate3d(1.2rem, 0, 0);
-    margin-top: 10%;
-  } */
-  
- /*  .switch input#two:checked ~ .switch__indicator {
-    background: blue;
-    transform: translate3d(3rem, 0, 0);
-    margin-top: 10%;
-  } */
- /*  .switch input#three:checked ~ .switch__indicator {
-    background: yellow;
-    transform: translate3d(5rem, 0, 0);
-    margin-top: 10%;
-  } */
-/*   .switch input[type=radio]:not(:checked), .switch input[type=radio]:checked {
-    display: none;
-  } */
-/* thème 1 */
+.switch__indicator , .switch__indicator2, .switch__indicator3:hover{
+  cursor: pointer;
+}
   .theme1 {
     background-color:hsl(222, 26%, 31%);
 
@@ -238,7 +219,7 @@ body{
   color: hsl(0, 0%, 100%);
 }
 
-.theme1 #egal{
+.theme1 .egal{
   background-color: hsl(25, 98%, 40%);
   box-shadow: hsl(6, 70%, 34%) !important;
   color: hsl(0, 0%, 100%);
@@ -305,7 +286,7 @@ background-color: hsl(185, 42%, 37%);
 color: hsl(0, 0%, 100%);
 }
 
-.theme2 #egal{
+.theme2 .egal{
 background-color: hsl(25, 98%, 40%);
 box-shadow: hsl(6, 70%, 34%) !important;
 color: hsl(0, 0%, 100%);
@@ -370,9 +351,63 @@ color: hsl(0, 0%, 100%) !important;
   color: hsl(0, 0%, 100%);
 }
 
-.theme3 #egal{
+.theme3 .egal{
 background-color:  hsl(176, 100%, 44%);;
 box-shadow: 0px 5px  hsl(177, 92%, 70%) !important;
 color: hsl(0, 0%, 100%);
 
+}
+
+@media screen and (max-width: 425px) {
+  #clavier{
+    width: 350px;
+    padding: 0px;
+  }
+  .calculator{
+    /* border: 2px solid red; */
+  }
+
+  .switch{
+    /* border: 2px solid white; */
+    padding: 0%;
+  }
+  .switch:before {
+    /* border: 2px solid red; */
+     left: 16.3rem;
+     width: 23%;
+  }
+
+  .switch__indicator{
+    /* border: 2px solid blue; */
+    left: 15.4rem;
+    top: 2.3rem;
+  }
+  .switch__label1{
+    left: 16.5rem;
+  }
+  .switch__indicator2{
+    /* border: 2px solid yellow; */
+    left: 17.3rem;
+    top: 2.3rem;
+  }
+
+  .switch__label2{
+    left: 18.5rem;
+  }
+
+  .switch__indicator3{
+    /* border: 2px solid green; */
+    left: 19.2rem;
+    top: 2.3rem;
+  }
+  .switch__label3{
+    left: 20.3rem;
+  } 
+  #theme{
+    margin-left: 1.5rem;
+  }
+
+  .result {
+    width: 99%;
+  }
 }

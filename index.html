@@ -49,25 +49,25 @@
                     <button class="btn number" onclick="appendNumber('4')" type="button">4</button>
                     <button class="btn number" onclick="appendNumber('5')" type="button">5</button>
                     <button class="btn number" onclick="appendNumber('6')" type="button">6</button>
-                    <button id="addition" class="btn" onclick="appendOperator('+')" type="button">+</button> 
+                    <button id="operator"  class="btn" type="button">+</button> 
                 </div>
         
                 <div class="ligne">
                     <button class="btn number" onclick="appendNumber('1')" type="button">1</button>
                     <button class="btn number" onclick="appendNumber('2')" type="button">2</button>
                     <button class="btn number" onclick="appendNumber('3')" type="button">3</button>
-                    <button id="operator" class="btn" onclick="appendOperator('-')" type="button">-</button> 
+                    <button id="operator"  class="btn" type="button">-</button> 
                 </div>
         
                 <div class="ligne">
-                    <button class="btn" onclick="appendOperator('.')" type="button">.</button>
+                    <button id = 'point' class="btn" type="button">.</button>
                     <button class="btn number" onclick="appendNumber('0')" type="button">0</button>
-                    <button id="operator" onclick="appendOperator('/')" class="btn" type="button">÷</button>
-                    <button id="operator" onclick="appendOperator('*')" class="btn" type="button">x</button> 
+                    <button id="operator" class="btn" type="button">÷</button>
+                    <button id="operator"  class="btn" type="button">*</button> 
                 </div>
                 <div class="ligne">
                     <button id="reset" class="btnLast" onclick="clean()" type="button">RESET</button>
-                    <button id="egal" class="btnLast" onclick = "result()" type="button">=</button>
+                    <button id="operator" class="btnLast egal" type="button">=</button>
                 </div>
 
             </div>
