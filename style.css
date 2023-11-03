@@ -358,13 +358,10 @@ color: hsl(0, 0%, 100%);
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
   #clavier{
     width: 350px;
     padding: 0px;
-  }
-  .calculator{
-    /* border: 2px solid red; */
   }
 
   .switch{
