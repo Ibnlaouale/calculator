@@ -120,29 +120,30 @@ operators.forEach(signe => {
 // let check = false;
 document.querySelector('#point').addEventListener('click', () => {
     if (!scren.value.includes('.')) {
-        if (firstNumber == '' && (!sign)) {
+        if (firstNumber == '' && (!sign)) { 
             firstNumber += '0.'
             scren.value = firstNumber;
         } else if(firstNumber != '' && (!sign)){
             firstNumber += '.';
             scren.value = firstNumber;   
         } 
-        if (firstNumber !='' && secondNumber =='' && (sign)){
-            secondNumber += '0.';
-            console.log('HHHHH');
-            scren.value = secondNumber;
-        }else if (secondNumber !='' && (sign)){
+        if (secondNumber !='' && (sign)){
             secondNumber += '.';
             scren.value = secondNumber;
         }
-       
+    }else if (scren.value.includes('.') && firstNumber !='' && secondNumber =='' && (sign)){
+        secondNumber += '0.';
+        console.log('HHHHH');
+        scren.value = secondNumber;
     }
+   
 })
 function clean (){
     scren.value = '';
     firstNumber = '';
     sign = '';
     secondNumber = '';
+    result='';
 
 }
 function cancel(){

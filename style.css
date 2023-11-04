@@ -358,7 +358,7 @@ color: hsl(0, 0%, 100%);
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   #clavier{
     width: 350px;
     padding: 0px;
